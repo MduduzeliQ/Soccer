@@ -1,0 +1,45 @@
+
+<ion-header>
+
+  <ion-navbar color="brown">
+    <ion-title class="con">Score Board</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="bgground"> 
+<ion-card class="back"><h1 class="colouring"><marquee>2018 Fifa World Cup Russia</marquee></h1>
+   <div *ngFor="let me of arry">
+
+     <div class="scoring" (click)="Checking('B')">
+       <h1 class="h1">Home</h1>
+       <ion-label class="label">Team Name</ion-label><h3>{{me.Home}}</h3>
+        <ion-label lass="label">Team Score:</ion-label><h3>{{Hscore}}</h3>
+     </div>
+  <div class="scoring" (click)="Checking('Away')">
+    <h1 class="h1">Away</h1>
+     <ion-label class="label">Team Name:</ion-label><h3>{{me.Away}}</h3>
+     <ion-label class="label">Team score:</ion-label><h3>{{Ascore}}</h3>
+  </div>
+   </div>
+<div align="center">
+   <button ion-button type="submit" color="brown" (click)="Trying()">Trying</button>
+   <button ion-button type="submit" color="brown" (click)="Con()">Penalty</button>
+   <button ion-button type="submit" color="brown" (click)="Convert()">Conversion</button>
+  </div>
+  </ion-card>
+
+<div align="left" class="inherit">
+<button ion-button type="undo" small color="brown" (click)="undo()"><ion-icon name="undo">Try</ion-icon></button><br>
+<button ion-button type="undo" small color="brown" (click)="undos()"><ion-icon name="undo">Pen</ion-icon></button><br>
+<button ion-button type="undo" small color="brown" (click)="undois()"><ion-icon name="undo">Con</ion-icon></button>
+</div>
+<button ion-button type="rest" color="brown" (click)="Resetings()">Clear</button>
+
+<ion-footer >
+    <ion-toolbar color="brown">
+      <p>&copy;2018 DLAMINI</p>
+    </ion-toolbar>
+</ion-footer>
+</ion-content>
+

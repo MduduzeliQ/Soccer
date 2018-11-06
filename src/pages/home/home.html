@@ -1,0 +1,40 @@
+<p>Hopkins Lite</p>
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="../../assets/cover.jpg" class="animated zoomOutDown delay-2s">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+  </div>
+
+<ion-header>
+  <ion-navbar color="brown">
+    <ion-title class="align">
+   Fifa World Cup Russia 2018
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bgground" padding>
+  
+    <ion-item>
+    <ion-label floating>Home:</ion-label>
+    <ion-input type="text" [(ngModel)]="Home"></ion-input>
+    </ion-item>
+    <p>VS</p>
+    <ion-item>
+    <ion-label floating>Away:</ion-label>
+    <ion-input type="text" [(ngModel)]="Away"></ion-input>
+    </ion-item>
+
+    <div align="center" class="inherit">
+      <button ion-button color="brown" round (click)="Start()">Start</button><br>
+      <button ion-button type="reset" round color="brown" (click)="Eraser()">Clear</button>
+      </div>
+
+  <ion-footer>
+      <ion-toolbar color="brown">
+        <p>&copy;2018 DLAMINI</p>
+      </ion-toolbar>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,59 @@
+page-scoreboard {
+    .bgground{
+        background-image: url('../../assets/Wcup.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .con{
+        text-align: center;
+        font-family: Arial;
+        background-color: rgb(80, 31, 31);
+        text-align: right;
+}
+
+
+:active .scoring:hover{
+    background-color: rgb(202, 173, 45);
+}
+
+.back{
+background: transparent;
+}
+.h1{
+    font-family: Arial;
+    text-align: center;
+    background-color: rgb(252, 175, 104);
+}
+.label{
+    font-family: Arial;
+}
+.scoring{
+    width: 35%;
+    border: solid 2px  rgb(80, 31, 31);
+    margin-top: 5%;
+    margin-left: 9%;
+    margin-bottom: 5%;
+    
+    height: 150px;
+    float: left;
+}
+ion-footer{
+    color:white;
+    position: fixed;
+}
+h3{
+    background-color: white;
+}
+.colouring{
+    color:white;
+}
+p{
+    text-align: center;   
+}
+.inherit{
+    font-family: Arial;
+    opacity: 0.90;
+}
+}
+
